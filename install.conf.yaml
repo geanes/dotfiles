@@ -1,10 +1,11 @@
 - clean: ['~']
-- link: {
+
+- link: 
     ~/dotfiles: ''
-    ~/.bashrc: bashrc
-    ~/.vim: vim/
-    ~/.vimrc: vimrc
-    ~/.gitconfig: gitconfig
-    ~/.Xmodmap: Xmodmap
-}
+    ~/.bashrc: .bashrc
+    ~/.vim: .vim/
+    ~/.vimrc: .vimrc
+    ~/.gitconfig: .gitconfig
+    ~/.Xmodmap: .Xmodmap
+
 - shell: []
