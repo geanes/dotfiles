@@ -1,0 +1,7 @@
+[user]
+	name = geanes
+	email = glenn.eanes@gmail.com
+[credential]
+	helper = cache
+[merge]
+	conflictstyle = diff3
