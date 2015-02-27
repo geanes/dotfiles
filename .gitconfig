@@ -5,3 +5,5 @@
 	helper = cache
 [merge]
 	conflictstyle = diff3
+[color]
+	ui = auto
