@@ -64,7 +64,7 @@ set encoding=utf-8
 set number
 set numberwidth=5
 
-" Tab completion will insert tab aat beginning of line
+" Tab completion will insert tab at beginning of line
 " will use completion if not at beginning.
 set wildmode=list:longest,list:full
 set complete=.,w,t
