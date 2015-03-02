@@ -84,3 +84,5 @@ if [ -e /lib/terminfo/x/xterm-256color ]; then
 else
         export TERM='xterm'
 fi
+
+export EDITOR='vim'
