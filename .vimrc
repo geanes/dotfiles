@@ -27,6 +27,7 @@ Plugin 'sickill/vim-pasta'
 Plugin 'benmills/vimux'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-scripts/Vim-R-plugin', {'rtp': 'autoload/'}
 " Plugin 'bling/vim-bufferline'
 " Plugin 'ShowMarks'
 call vundle#end()
@@ -109,3 +110,15 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " UltiSnipsEdit splits window
 let g:UltiSnipsEditSplit="vertical"
+
+" Vimux slime
+function! VimuxSlime()
+  call VimuxSendText(@v)
+  call VimuxSendKeys("Enter")
+endfunction
+" If text is selected, save it in the v buffer and send that buffer to tmux
+vmap <LocalLeader>vs "vy :call VimuxSlime()<CR>
+" Select current line and send it to tmux
+nmap <LocalLeader>vl V<LocalLeader>vs<CR>
+" Select current paragraph and send it to tmux
+nmap <LocalLeader>vs vip<LocalLeader>vs<CR>
