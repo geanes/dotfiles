@@ -27,6 +27,8 @@ Plugin 'sickill/vim-pasta'
 Plugin 'benmills/vimux'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'vim-scripts/fountain.vim'
+Plugin 'vim-scripts/fountainwiki.vim'
 Plugin 'vim-scripts/Vim-R-plugin', {'rtp': 'autoload/'}
 " Plugin 'bling/vim-bufferline'
 " Plugin 'ShowMarks'
