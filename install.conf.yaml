@@ -1,13 +1,10 @@
 - clean: ["~"]
 
 - link:
-    ~/.bashrc: .bashrc
     ~/.zshrc: .zshrc
     ~/.vim: .vim/
     ~/.vimrc: .vimrc
     ~/.gitconfig: .gitconfig
     ~/.tmux.conf: .tmux.conf
-    ~/.Xmodmap: .Xmodmap
-    ~/.Xresources: .Xresources
 
 - shell: [git submodule update --init --recursive, Installing submodules]
