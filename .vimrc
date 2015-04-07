@@ -16,7 +16,8 @@ Plugin 'Zoomwin'
 Plugin 'scrooloose/Syntastic'
 Plugin 'matchit.zip'
 Plugin 'tComment'
-Plugin 'aruscher/vim-sparkup-py3'
+Plugin 'tristen/vim-sparkup'
+" Plugin 'aruscher/vim-sparkup-py3'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-fugitive'
@@ -30,15 +31,16 @@ Plugin 'benmills/vimux'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-scripts/fountain.vim'
-Plugin 'vim-scripts/fountainwiki.vim'
+Plugin 'vim-scripts/Vim-R-plugin'
+Plugin 'ShowMarks'
+Plugin 'tpope/vim-surround'
+" Plugin 'vim-scripts/fountainwiki.vim'
 " Plugin 'bling/vim-bufferline'
-" Plugin 'ShowMarks'
 call vundle#end()
 
 " vim options
 filetype plugin indent on
 syntax on
-au BufNewFile,BufRead *.fountain set filetype=fountain
 " colorscheme twilight256
 " colorscheme xoria256
 colorscheme Tomorrow-Night-Eighties
@@ -72,6 +74,7 @@ set notimeout
 
 " Syntax highlighting for filetypes.
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+au BufNewFile,BufRead *.fountain set filetype=fountain
 
 " Enable spellchecking for markdown
 autocmd FileType markdown setlocal spell
@@ -82,7 +85,7 @@ if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
 let g:airline_symbols.space = "\ua0"
-let g:airline_theme = 'light'
+let g:airline_theme = 'wombat'
 set t_Co=256
 
 :set smartcase
