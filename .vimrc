@@ -9,6 +9,8 @@ Plugin 'ervandew/supertab'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'xoria256.vim'
 Plugin 'Distinguished'
+Plugin 'vim-scripts/twilight256.vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'ctrlp.vim'
 Plugin 'Zoomwin'
 Plugin 'scrooloose/Syntastic'
@@ -36,7 +38,10 @@ call vundle#end()
 " vim options
 filetype plugin indent on
 syntax on
-colorscheme xoria256
+au BufNewFile,BufRead *.fountain set filetype=fountain
+" colorscheme twilight256
+" colorscheme xoria256
+colorscheme Tomorrow-Night-Eighties
 " colorscheme distinguished
 " colorscheme solarized
 " set background=dark
