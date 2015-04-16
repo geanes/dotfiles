@@ -140,8 +140,14 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 
 " SYNTAX
 " Syntax highlighting for filetypes.
-autocmd BufRead,BufNewFile *.md set filetype=markdown
+utocmd BufRead,BufNewFile *.md set filetype=markdown
+aautocmd BufNewFile,BufRead *.md set shiftwidth=4
+autocmd BufNewFile,BufRead *.md set tabstop=4
+autocmd BufNewFile,BufRead *.md set textwidth=0
 autocmd BufNewFile,BufRead *.fountain set filetype=fountain
+autocmd BufNewFile,BufRead *.fountain set shiftwidth=4
+autocmd BufNewFile,BufRead *.fountain set tabstop=4
+autocmd BufNewFile,BufRead *.fountain set textwidth=0
 " Enable spellchecking for markdown and fountain
 autocmd FileType markdown setlocal spell
 autocmd FileType fountain setlocal spell
