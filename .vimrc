@@ -78,6 +78,7 @@ set t_Co=256
 " set macmeta
 filetype plugin indent on
 syntax on
+set mouse=a
 set scrolloff=999
 set encoding=utf-8
 set updatetime=300
@@ -140,8 +141,8 @@ inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 
 " SYNTAX
 " Syntax highlighting for filetypes.
-utocmd BufRead,BufNewFile *.md set filetype=markdown
-aautocmd BufNewFile,BufRead *.md set shiftwidth=4
+autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.md set shiftwidth=4
 autocmd BufNewFile,BufRead *.md set tabstop=4
 autocmd BufNewFile,BufRead *.md set textwidth=0
 autocmd BufNewFile,BufRead *.fountain set filetype=fountain
