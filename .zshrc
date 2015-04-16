@@ -53,6 +53,7 @@ export PATH="/home/user/anaconda3/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+alias vim='mvim -v'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
